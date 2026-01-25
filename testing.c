@@ -1,8 +1,15 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(){
-    signed int a = -10;
-    char ch = '\0';
-    printf("ch %c", ch);
 
+    char p[20];
+    char *s = "string";
+    int leng = strlen(s);
+    for (int i = 0; i < leng; i++)
+    {
+        p[i] = s[leng - i];
+    }
+    printf("%s", p);
+    
 }
